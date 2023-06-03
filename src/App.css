@@ -63,7 +63,8 @@ main {
   align-items: center;
 }
 
-.player-card {
+.player-card,
+.player-detail {
   width: 30%;
   display: flex;
   flex-flow: column nowrap;
@@ -75,21 +76,23 @@ main {
   background-color: #dbdbdb;
 }
 
-.player-card > *:nth-child(n + 2) {
+.player-card > *:nth-child(n + 2),
+.player-detail > *:nth-child(n + 2) {
   margin-top: 1rem;
 }
 
-.player-card img {
+.player-card img,
+.player-detail img {
   width: 100%;
   height: auto;
 }
 
-.player-detail {
+.player-detail-button {
   width: 100%;
   background-color: #000;
 }
 
-.player-detail button {
+.player-detail-button button {
   width: 100%;
   height: 100%;
   background-color: #000;
@@ -97,6 +100,29 @@ main {
   border: none;
   font-size: 1rem;
   padding: 1rem;
+  cursor: pointer;
+}
+
+.player-info {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.player-detail-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000081;
+}
+
+.player-detail-container.off {
+  display: none;
 }
 
 footer {
