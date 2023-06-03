@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
-import Players from './components/Players';
+import PlayersContainer from './components/PlayersContainer';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       </header>
 
       <main>
-        <Players />
+        <PlayersContainer />
       </main>
 
       <Footer />
