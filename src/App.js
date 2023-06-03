@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
+import Main from './components/Main';
 import Navigation from './components/Navigation';
-import PlayersContainer from './components/PlayersContainer';
 
 function App() {
   return (
@@ -9,11 +9,7 @@ function App() {
       <header>
         <Navigation />
       </header>
-
-      <main>
-        <PlayersContainer />
-      </main>
-
+      <Main />
       <Footer />
     </div>
   );
