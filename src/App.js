@@ -6,9 +6,7 @@ import Navigation from './components/Navigation';
 function App() {
   return (
     <div>
-      <header>
-        <Navigation />
-      </header>
+      <Navigation />
       <Main />
       <Footer />
     </div>
