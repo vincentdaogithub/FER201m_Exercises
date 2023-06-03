@@ -67,6 +67,34 @@ main {
   margin: 2rem 0;
 }
 
+.contact-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-link-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #dbdbdb;
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #000;
+  font-size: 1.5rem;
+}
+
+.contact-link-container img {
+  width: 100%;
+  height: auto;
+}
+
 .player-container {
   width: 100%;
   display: flex;
@@ -75,8 +103,7 @@ main {
   align-items: center;
 }
 
-.player-card,
-.player-detail {
+.player-card {
   width: 30%;
   display: flex;
   flex-flow: column nowrap;
@@ -84,17 +111,14 @@ main {
   align-items: center;
   overflow: hidden;
   margin: 1rem;
-  box-sizing: border-box;
   background-color: #dbdbdb;
 }
 
-.player-card > *:nth-child(n + 2),
-.player-detail > *:nth-child(n + 2) {
+.player-card > *:nth-child(n + 2) {
   margin-top: 1rem;
 }
 
-.player-card img,
-.player-detail img {
+.player-card img {
   width: 100%;
   height: auto;
 }
@@ -115,26 +139,51 @@ main {
   cursor: pointer;
 }
 
-.player-info {
-  width: 100%;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
 .player-detail-container {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00000081;
 }
 
-.player-detail-container.off {
-  display: none;
+.player-detail {
+  width: 50%;
+  position: relative;
+  box-shadow: 0 0 1rem #424242;
+}
+
+.img-detail-container {
+  width: 100%;
+  background-color: #dbdbdb;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-detail-container img {
+  width: 60%;
+  height: auto;
+}
+
+.player-detail-name {
+  position: absolute;
+  top: 10%;
+  background-color: red;
+  color: #fff;
+  padding: 1rem;
+}
+
+.player-info,
+.club-title,
+.market-value {
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.market-value {
+  color: #ffc400;
 }
 
 footer {
