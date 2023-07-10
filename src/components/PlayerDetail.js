@@ -1,6 +1,7 @@
 import React from "react";
 import { data } from "../shared/ListOfPlayers";
 import { useParams } from "react-router-dom";
+import { Card } from "@mui/material";
 
 export default function PlayerDetail() {
     const playerId = useParams();
@@ -8,7 +9,7 @@ export default function PlayerDetail() {
         return obj.id == playerId.id;
     });
     return (
-        <div className="player-detail-container">
+        <Card className="player-detail-container">
             <div className="player-detail">
                 <div className="img-detail-container">
                     <img src={`../${player.img}`} alt={player.name} />
@@ -18,6 +19,6 @@ export default function PlayerDetail() {
                 <h3 className="market-value">Market value: &euro; {player.cost}</h3>
                 <p className="player-info">{player.info}</p>
             </div>
-        </div>
+        </Card>
     );
 }
